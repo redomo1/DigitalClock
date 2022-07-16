@@ -1,0 +1,610 @@
+Archive member included because of file (symbol)
+
+d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                              ./MCAL/TIMER/TIMER_Program.o (__mulsi3)
+d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                              ./MCAL/TIMER/TIMER_Program.o (__udivmodsi4)
+d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o (exit)
+d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./HAL/HKPD/HKPD_Program.o (__do_copy_data)
+d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./MCAL/TIMER/TIMER_Program.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+TIMER0_CallBack     0x2               ./MCAL/TIMER/TIMER_Program.o
+CallBackFunction    0x2               ./MCAL/MEXTI/MEXTI_Program.o
+TIMER2_CallBack     0x2               ./MCAL/TIMER/TIMER_Program.o
+TIMER1_CallBack     0x2               ./MCAL/TIMER/TIMER_Program.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+LOAD ./MCAL/TIMER/TIMER_Program.o
+LOAD ./MCAL/MGIE/MGIE_Program.o
+LOAD ./MCAL/MEXTI/MEXTI_Program.o
+LOAD ./MCAL/MDIO/MDIO_Program.o
+LOAD ./MCAL/MADC/MADC_Program.o
+LOAD ./HAL/HLED/HLED_Program.o
+LOAD ./HAL/HKPD/HKPD_Program.o
+LOAD ./HAL/HCLCD/HCLCD_Program.o
+LOAD ./main.o
+LOAD d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x13fe
+ *(.vectors)
+ .vectors       0x00000000       0x54 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+                0x0000008e                __vector_12
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_3
+                0x0000008e                __vector_13
+                0x0000008e                __vector_17
+                0x0000008e                __vector_19
+                0x0000008e                __vector_2
+                0x0000008e                __vector_15
+                0x0000008e                __vector_14
+                0x0000008e                __vector_16
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092        0x0 ./MCAL/TIMER/TIMER_Program.o
+ .text          0x00000092        0x0 ./MCAL/MGIE/MGIE_Program.o
+ .text          0x00000092        0x0 ./MCAL/MEXTI/MEXTI_Program.o
+ .text          0x00000092        0x0 ./MCAL/MDIO/MDIO_Program.o
+ .text          0x00000092        0x0 ./MCAL/MADC/MADC_Program.o
+ .text          0x00000092        0x0 ./HAL/HLED/HLED_Program.o
+ .text          0x00000092        0x0 ./HAL/HKPD/HKPD_Program.o
+ .text          0x00000092        0x0 ./HAL/HCLCD/HCLCD_Program.o
+ .text          0x00000092        0x0 ./main.o
+ .text          0x00000092        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .text          0x00000092        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000092        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000092        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000092        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000092                . = ALIGN (0x2)
+ *(.text.*)
+ .text.TIMER0_VidInit
+                0x00000092       0x32 ./MCAL/TIMER/TIMER_Program.o
+                0x00000092                TIMER0_VidInit
+ .text.TIMER0_VidSetPreload
+                0x000000c4        0x4 ./MCAL/TIMER/TIMER_Program.o
+                0x000000c4                TIMER0_VidSetPreload
+ .text.TIMER0_VidSetCTCValue
+                0x000000c8        0x4 ./MCAL/TIMER/TIMER_Program.o
+                0x000000c8                TIMER0_VidSetCTCValue
+ .text.TIMER0_VidOVF_SetCallBack
+                0x000000cc        0xa ./MCAL/TIMER/TIMER_Program.o
+                0x000000cc                TIMER0_VidOVF_SetCallBack
+ .text.TIMER0_VidCTC_SetCallBack
+                0x000000d6        0xa ./MCAL/TIMER/TIMER_Program.o
+                0x000000d6                TIMER0_VidCTC_SetCallBack
+ .text.__vector_11
+                0x000000e0       0x4e ./MCAL/TIMER/TIMER_Program.o
+                0x000000e0                __vector_11
+ .text.__vector_10
+                0x0000012e       0x4e ./MCAL/TIMER/TIMER_Program.o
+                0x0000012e                __vector_10
+ .text.TIMER1_VidInit
+                0x0000017c       0x38 ./MCAL/TIMER/TIMER_Program.o
+                0x0000017c                TIMER1_VidInit
+ .text.TIMER1_VidSetPreload
+                0x000001b4        0x6 ./MCAL/TIMER/TIMER_Program.o
+                0x000001b4                TIMER1_VidSetPreload
+ .text.TIMER1_VidSetTopValue
+                0x000001ba        0x6 ./MCAL/TIMER/TIMER_Program.o
+                0x000001ba                TIMER1_VidSetTopValue
+ .text.TIMER1_VidSetCTCValueCHA
+                0x000001c0        0x6 ./MCAL/TIMER/TIMER_Program.o
+                0x000001c0                TIMER1_VidSetCTCValueCHA
+ .text.TIMER1_VidSetCTCValueCHB
+                0x000001c6        0x6 ./MCAL/TIMER/TIMER_Program.o
+                0x000001c6                TIMER1_VidSetCTCValueCHB
+ .text.TIMER1_VidICUInit
+                0x000001cc       0x14 ./MCAL/TIMER/TIMER_Program.o
+                0x000001cc                TIMER1_VidICUInit
+ .text.__vector_9
+                0x000001e0       0x22 ./MCAL/TIMER/TIMER_Program.o
+                0x000001e0                __vector_9
+ .text.__vector_6
+                0x00000202       0xee ./MCAL/TIMER/TIMER_Program.o
+                0x00000202                __vector_6
+ .text.TIMER1_VidCTC_SetCallBack
+                0x000002f0        0xa ./MCAL/TIMER/TIMER_Program.o
+                0x000002f0                TIMER1_VidCTC_SetCallBack
+ .text.__vector_7
+                0x000002fa       0x4e ./MCAL/TIMER/TIMER_Program.o
+                0x000002fa                __vector_7
+ .text.__vector_8
+                0x00000348       0x4e ./MCAL/TIMER/TIMER_Program.o
+                0x00000348                __vector_8
+ .text.TIMER1_VidCompute_Freq_And_Duty
+                0x00000396       0xb4 ./MCAL/TIMER/TIMER_Program.o
+                0x00000396                TIMER1_VidCompute_Freq_And_Duty
+ .text.TIMER2_VidInit
+                0x0000044a       0x32 ./MCAL/TIMER/TIMER_Program.o
+                0x0000044a                TIMER2_VidInit
+ .text.TIMER2_VidSetPreload
+                0x0000047c        0x4 ./MCAL/TIMER/TIMER_Program.o
+                0x0000047c                TIMER2_VidSetPreload
+ .text.TIMER2_VidSetCTCValue
+                0x00000480        0x4 ./MCAL/TIMER/TIMER_Program.o
+                0x00000480                TIMER2_VidSetCTCValue
+ .text.TIMER2_VidOVF_SetCallBack
+                0x00000484        0xa ./MCAL/TIMER/TIMER_Program.o
+                0x00000484                TIMER2_VidOVF_SetCallBack
+ .text.TIMER2_VidCTC_SetCallBack
+                0x0000048e        0xa ./MCAL/TIMER/TIMER_Program.o
+                0x0000048e                TIMER2_VidCTC_SetCallBack
+ .text.__vector_4
+                0x00000498       0x4e ./MCAL/TIMER/TIMER_Program.o
+                0x00000498                __vector_4
+ .text.__vector_5
+                0x000004e6       0x4e ./MCAL/TIMER/TIMER_Program.o
+                0x000004e6                __vector_5
+ .text.MGIE_VidEnable
+                0x00000534        0x8 ./MCAL/MGIE/MGIE_Program.o
+                0x00000534                MGIE_VidEnable
+ .text.MGIE_VidDisable
+                0x0000053c        0x8 ./MCAL/MGIE/MGIE_Program.o
+                0x0000053c                MGIE_VidDisable
+ .text.MEXTI0_VidInit
+                0x00000544       0x14 ./MCAL/MEXTI/MEXTI_Program.o
+                0x00000544                MEXTI0_VidInit
+ .text.MEXTI1_VidInit
+                0x00000558       0x14 ./MCAL/MEXTI/MEXTI_Program.o
+                0x00000558                MEXTI1_VidInit
+ .text.MEXTI2_VidInit
+                0x0000056c        0xe ./MCAL/MEXTI/MEXTI_Program.o
+                0x0000056c                MEXTI2_VidInit
+ .text.MEXTI_VidSenseControl
+                0x0000057a       0x92 ./MCAL/MEXTI/MEXTI_Program.o
+                0x0000057a                MEXTI_VidSenseControl
+ .text.EXTI0_Set_CallBackFunction
+                0x0000060c        0xa ./MCAL/MEXTI/MEXTI_Program.o
+                0x0000060c                EXTI0_Set_CallBackFunction
+ .text.__vector_1
+                0x00000616       0x4e ./MCAL/MEXTI/MEXTI_Program.o
+                0x00000616                __vector_1
+ .text.MDIO_Error_State_SetPinDirection
+                0x00000664      0x100 ./MCAL/MDIO/MDIO_Program.o
+                0x00000664                MDIO_Error_State_SetPinDirection
+ .text.MDIO_Error_State_SetPortDirection
+                0x00000764       0x32 ./MCAL/MDIO/MDIO_Program.o
+                0x00000764                MDIO_Error_State_SetPortDirection
+ .text.MDIO_Error_State_SetPinValue
+                0x00000796      0x100 ./MCAL/MDIO/MDIO_Program.o
+                0x00000796                MDIO_Error_State_SetPinValue
+ .text.MDIO_Error_State_SetPortValue
+                0x00000896       0x28 ./MCAL/MDIO/MDIO_Program.o
+                0x00000896                MDIO_Error_State_SetPortValue
+ .text.MDIO_Error_State_GetPinValue
+                0x000008be       0x46 ./MCAL/MDIO/MDIO_Program.o
+                0x000008be                MDIO_Error_State_GetPinValue
+ .text.MDIO_Error_State_SetNippleValue
+                0x00000904       0x9a ./MCAL/MDIO/MDIO_Program.o
+                0x00000904                MDIO_Error_State_SetNippleValue
+ .text.MADC_VidInit
+                0x0000099e       0x16 ./MCAL/MADC/MADC_Program.o
+                0x0000099e                MADC_VidInit
+ .text.MADC_u16ADC_StartConversion
+                0x000009b4       0x1c ./MCAL/MADC/MADC_Program.o
+                0x000009b4                MADC_u16ADC_StartConversion
+ .text.MADC_VidInit_WithEXTI
+                0x000009d0       0x36 ./MCAL/MADC/MADC_Program.o
+                0x000009d0                MADC_VidInit_WithEXTI
+ .text.HLED_VidLed_Toggle
+                0x00000a06       0x2c ./HAL/HLED/HLED_Program.o
+                0x00000a06                HLED_VidLed_Toggle
+ .text.HLED_VidLed_Off
+                0x00000a32        0xe ./HAL/HLED/HLED_Program.o
+                0x00000a32                HLED_VidLed_Off
+ .text.HLED_VidLed_On
+                0x00000a40        0xe ./HAL/HLED/HLED_Program.o
+                0x00000a40                HLED_VidLed_On
+ .text.HLED_VidInit
+                0x00000a4e        0xe ./HAL/HLED/HLED_Program.o
+                0x00000a4e                HLED_VidInit
+ .text.HKPD_U8GetKeyPressed
+                0x00000a5c       0xc8 ./HAL/HKPD/HKPD_Program.o
+                0x00000a5c                HKPD_U8GetKeyPressed
+ .text.HKPD_VidInit
+                0x00000b24       0xa2 ./HAL/HKPD/HKPD_Program.o
+                0x00000b24                HKPD_VidInit
+ .text.HCLCD_VidWriteChar_4Bits
+                0x00000bc6       0x40 ./HAL/HCLCD/HCLCD_Program.o
+                0x00000bc6                HCLCD_VidWriteChar_4Bits
+ .text.HCLCD_VidWriteString_4Bits
+                0x00000c06       0x26 ./HAL/HCLCD/HCLCD_Program.o
+                0x00000c06                HCLCD_VidWriteString_4Bits
+ .text.HCLCD_VidSendChar_4Bits
+                0x00000c2c       0x16 ./HAL/HCLCD/HCLCD_Program.o
+                0x00000c2c                HCLCD_VidSendChar_4Bits
+ .text.HCLCD_VidWriteCommand_4Bits
+                0x00000c42       0x40 ./HAL/HCLCD/HCLCD_Program.o
+                0x00000c42                HCLCD_VidWriteCommand_4Bits
+ .text.HCLCD_VidSetPosition_8BitsMode
+                0x00000c82       0x24 ./HAL/HCLCD/HCLCD_Program.o
+                0x00000c82                HCLCD_VidSetPosition_8BitsMode
+ .text.HCLCD_Vid4Bits_Init
+                0x00000ca6       0x9c ./HAL/HCLCD/HCLCD_Program.o
+                0x00000ca6                HCLCD_Vid4Bits_Init
+ .text.HCLCD_VidWriteChar_8Bits
+                0x00000d42       0x56 ./HAL/HCLCD/HCLCD_Program.o
+                0x00000d42                HCLCD_VidWriteChar_8Bits
+ .text.HCLCD_VidWriteNumber_4Bits
+                0x00000d98       0xd2 ./HAL/HCLCD/HCLCD_Program.o
+                0x00000d98                HCLCD_VidWriteNumber_4Bits
+ .text.HCLCD_VidWriteNumber_8Bits
+                0x00000e6a       0xd2 ./HAL/HCLCD/HCLCD_Program.o
+                0x00000e6a                HCLCD_VidWriteNumber_8Bits
+ .text.HCLCD_VidWriteString_8Bits
+                0x00000f3c       0x26 ./HAL/HCLCD/HCLCD_Program.o
+                0x00000f3c                HCLCD_VidWriteString_8Bits
+ .text.HCLCD_VidWriteCommand_8Bits
+                0x00000f62       0x56 ./HAL/HCLCD/HCLCD_Program.o
+                0x00000f62                HCLCD_VidWriteCommand_8Bits
+ .text.HCLCD_VidSetPosition
+                0x00000fb8       0x24 ./HAL/HCLCD/HCLCD_Program.o
+                0x00000fb8                HCLCD_VidSetPosition
+ .text.HCLCD_Vid8Bits_Init
+                0x00000fdc       0x68 ./HAL/HCLCD/HCLCD_Program.o
+                0x00000fdc                HCLCD_Vid8Bits_Init
+ .text.APP_TIMER1
+                0x00001044      0x100 ./main.o
+                0x00001044                APP_TIMER1
+ .text.HCLCD_VidClockSet
+                0x00001144      0x1a0 ./main.o
+                0x00001144                HCLCD_VidClockSet
+ .text.main     0x000012e4       0x94 ./main.o
+                0x000012e4                main
+ .text.libgcc   0x00001378       0x3e d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                0x00001378                __mulsi3
+ .text.libgcc   0x000013b6       0x44 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x000013b6                __udivmodsi4
+ .text.libgcc   0x000013fa        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x000013fa        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x000013fa        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x000013fa                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000013fa        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x000013fa                exit
+                0x000013fa                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000013fa        0x4 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x000013fe                _etext = .
+
+.data           0x00800060       0x20 load address 0x000013fe
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ .data          0x00800060        0x0 ./MCAL/TIMER/TIMER_Program.o
+ .data          0x00800060        0x0 ./MCAL/MGIE/MGIE_Program.o
+ .data          0x00800060        0x0 ./MCAL/MEXTI/MEXTI_Program.o
+ .data          0x00800060        0x0 ./MCAL/MDIO/MDIO_Program.o
+ .data          0x00800060        0x0 ./MCAL/MADC/MADC_Program.o
+ .data          0x00800060        0x0 ./HAL/HLED/HLED_Program.o
+ .data          0x00800060        0x0 ./HAL/HKPD/HKPD_Program.o
+ .data          0x00800060        0x0 ./HAL/HCLCD/HCLCD_Program.o
+ .data          0x00800060        0xf ./main.o
+ .data          0x0080006f        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .data          0x0080006f        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x0080006f        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x0080006f        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x0080006f        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ .rodata.KPD_u8SwitchVal
+                0x0080006f       0x10 ./HAL/HKPD/HKPD_Program.o
+                0x0080006f                KPD_u8SwitchVal
+ *(.gnu.linkonce.d*)
+                0x00800080                . = ALIGN (0x2)
+ *fill*         0x0080007f        0x1 00
+                0x00800080                _edata = .
+                0x00800080                PROVIDE (__data_end, .)
+
+.bss            0x00800080       0x27
+                0x00800080                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800080        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ .bss           0x00800080        0x0 ./MCAL/TIMER/TIMER_Program.o
+ .bss           0x00800080        0x0 ./MCAL/MGIE/MGIE_Program.o
+ .bss           0x00800080        0x0 ./MCAL/MEXTI/MEXTI_Program.o
+ .bss           0x00800080        0x0 ./MCAL/MDIO/MDIO_Program.o
+ .bss           0x00800080        0x0 ./MCAL/MADC/MADC_Program.o
+ .bss           0x00800080        0x0 ./HAL/HLED/HLED_Program.o
+ .bss           0x00800080        0x0 ./HAL/HKPD/HKPD_Program.o
+ .bss           0x00800080        0x0 ./HAL/HCLCD/HCLCD_Program.o
+ .bss           0x00800080        0x0 ./main.o
+ .bss           0x00800080        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .bss           0x00800080        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x00800080        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800080        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x00800080        0x0 d:/sdk_win_64/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.Flag      0x00800080        0x1 ./MCAL/TIMER/TIMER_Program.o
+ .bss.T3        0x00800081        0x4 ./MCAL/TIMER/TIMER_Program.o
+ .bss.T1        0x00800085        0x4 ./MCAL/TIMER/TIMER_Program.o
+ .bss.T2        0x00800089        0x4 ./MCAL/TIMER/TIMER_Program.o
+ .bss.Count     0x0080008d        0x1 ./MCAL/TIMER/TIMER_Program.o
+ .bss.Flag.1254
+                0x0080008e        0x1 ./HAL/HLED/HLED_Program.o
+ .bss.hr        0x0080008f        0x4 ./main.o
+                0x0080008f                hr
+ .bss.min       0x00800093        0x4 ./main.o
+                0x00800093                min
+ .bss.sec       0x00800097        0x4 ./main.o
+                0x00800097                sec
+ .bss.check     0x0080009b        0x4 ./main.o
+                0x0080009b                check
+ *(COMMON)
+ COMMON         0x0080009f        0x6 ./MCAL/TIMER/TIMER_Program.o
+                0x0080009f                TIMER0_CallBack
+                0x008000a1                TIMER2_CallBack
+                0x008000a3                TIMER1_CallBack
+ COMMON         0x008000a5        0x2 ./MCAL/MEXTI/MEXTI_Program.o
+                0x008000a5                CallBackFunction
+                0x008000a7                PROVIDE (__bss_end, .)
+                0x000013fe                __data_load_start = LOADADDR (.data)
+                0x0000141e                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008000a7        0x0
+                0x008000a7                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008000a7                PROVIDE (__noinit_end, .)
+                0x008000a7                _end = .
+                0x008000a7                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(Display_Digital_Clock_on_CLCD_Project.elf elf32-avr)
+LOAD linker stubs
